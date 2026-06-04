@@ -1,0 +1,121 @@
+$date
+	Thu Jun 04 15:45:33 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module gt4b_tb $end
+$var wire 1 ! test_gt $end
+$var reg 4 " test_i0 [3:0] $end
+$var reg 4 # test_i1 [3:0] $end
+$scope module uut $end
+$var wire 1 $ eq_bit32 $end
+$var wire 1 ! gt $end
+$var wire 4 % i0 [3:0] $end
+$var wire 4 & i1 [3:0] $end
+$var wire 1 ' gt_bit32 $end
+$var wire 1 ( gt_bit10 $end
+$scope module gt_bit10_unit $end
+$var wire 1 ( gt $end
+$var wire 2 ) i0 [1:0] $end
+$var wire 2 * i1 [1:0] $end
+$var wire 1 + lsb_gt $end
+$var wire 1 , msb_eq $end
+$var wire 1 - msb_gt $end
+$upscope $end
+$scope module gt_bit32_unit $end
+$var wire 1 ' gt $end
+$var wire 2 . i0 [1:0] $end
+$var wire 2 / i1 [1:0] $end
+$var wire 1 0 lsb_gt $end
+$var wire 1 1 msb_eq $end
+$var wire 1 2 msb_gt $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+02
+11
+00
+b0 /
+b0 .
+0-
+1,
+0+
+b0 *
+b0 )
+0(
+0'
+b0 &
+b0 %
+1$
+b0 #
+b0 "
+0!
+$end
+#20000
+0!
+0(
+0'
+0-
+0+
+02
+00
+b11 *
+b11 /
+b11 )
+b11 .
+b1111 #
+b1111 &
+b1111 "
+b1111 %
+#40000
+1!
+1(
+1-
+0,
+1+
+b0 *
+b1100 #
+b1100 &
+#60000
+0!
+0(
+1,
+01
+0$
+0-
+0+
+b0 )
+b0 .
+b0 "
+b0 %
+#80000
+0(
+0-
+0+
+b11 *
+b11 )
+b1111 #
+b1111 &
+b11 "
+b11 %
+#100000
+1!
+1(
+1+
+11
+1$
+b10 *
+b10 /
+b10 .
+b1010 #
+b1010 &
+b1011 "
+b1011 %
+#120000
