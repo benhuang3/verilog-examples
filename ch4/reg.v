@@ -25,5 +25,12 @@ module reg_file
     );
 
     reg [B-1:0] array_reg [2**W-1:0];
+
+    // write
+    always @(posedge clk)
+        if (wr_en)
+            array_reg[w_addr] = w_data;
+    
+    assign r_data = array_reg[r_addr];
     
 endmodule
