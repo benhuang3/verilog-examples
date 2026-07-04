@@ -107,8 +107,8 @@ module univ_bin_counter
             r_next = r_reg;
     
     assign q = r_reg;
-    assign max_tick = (r_next == 2**N - 1) ? 1'b1 : 1'b0;
-    assign min_tick = (r_next == 0) ? 1'b1 : 1'b0;
+    assign max_tick = (r_reg == 2**N - 1) ? 1'b1 : 1'b0;
+    assign min_tick = (r_reg == 0) ? 1'b1 : 1'b0;
 endmodule
 
 
